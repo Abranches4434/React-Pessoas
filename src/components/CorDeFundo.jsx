@@ -7,10 +7,6 @@ const PALETA = [
   '#D4E8F0',
   '#E2F0CB',
   '#FCE4EC',
-  '#EDE7F6',
-  '#FFF9C4',
-  '#B2DFDB',
-  '#FFCCBC',
 ];
 function textoContrasteEscuro(hex) {
   const r = parseInt(hex.slice(1, 3), 16);

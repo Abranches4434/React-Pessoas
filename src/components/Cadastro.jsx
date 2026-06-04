@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const API_URL = 'https://6a209a7de96c1d13b587a989.mockapi.io/clientes';
 
@@ -43,7 +44,7 @@ function Cadastro() {
 
       if (!res.ok) throw new Error();
 
-      setStatus('✅ Pessoa cadastrada com sucesso!');
+      setStatus('Pessoa cadastrada com sucesso!');
       setNome('');
       setCpf('');
       setEmail('');
@@ -114,7 +115,7 @@ function Cadastro() {
         </div>
       </div>
       
-      <h5 className="mb-3">Pessoas cadastradas</h5>
+      <h3 className="mb-3">Pessoas cadastradas</h3>
 
       {pessoas.length === 0 ? (
         <p className="text-muted">Nenhuma pessoa cadastrada ainda.</p>
