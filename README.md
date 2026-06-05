@@ -1,16 +1,174 @@
-# React + Vite
+# 🚀 Projeto React - Componentes com Axios e Manipulação de Estado
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📋 Sobre o Projeto
 
-Currently, two official plugins are available:
+Este projeto foi desenvolvido utilizando **React** e **Vite**, com o objetivo de praticar conceitos fundamentais do desenvolvimento front-end, como consumo de APIs, manipulação de estados, renderização dinâmica de componentes e interação com formulários.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+O sistema é composto por **quatro componentes independentes**, cada um responsável por resolver um desafio específico utilizando diferentes recursos do React.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tecnologias Utilizadas
 
-## Expanding the ESLint configuration
+* React
+* Vite
+* Axios
+* MochAPI
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📌 Funcionalidades
+
+### 1️⃣ Cadastro e Listagem de Usuários
+
+Este componente realiza a integração com uma API hospedada no **MochAPI** através da biblioteca **Axios**.
+
+#### Funcionalidades:
+
+* Cadastro de usuários através de um formulário.
+* Campos disponíveis:
+
+  * Nome
+  * E-mail
+  * CPF
+* Envio dos dados para a API utilizando requisições HTTP.
+* Exibição de todos os usuários cadastrados em uma tabela dinâmica.
+* Atualização da lista de registros após novos cadastros.
+
+#### Conceitos praticados:
+
+* Consumo de APIs REST.
+* Requisições HTTP com Axios.
+* Manipulação de formulários.
+* Gerenciamento de estado com Hooks.
+
+---
+
+### 2️⃣ Consulta de Usuário por ID
+
+Este componente permite buscar um usuário específico armazenado na API.
+
+#### Funcionalidades:
+
+* Campo para inserção do ID.
+* Busca do registro correspondente na API.
+* Exibição dos dados encontrados.
+* Mensagem de erro quando o ID informado não existe.
+
+#### Conceitos praticados:
+
+* Requisições GET.
+* Tratamento de erros.
+* Renderização condicional.
+
+---
+
+### 3️⃣ Seleção de Marca e Modelo de Carro
+
+Este componente utiliza um elemento `<select>` para permitir que o usuário escolha uma marca de veículo.
+
+#### Base de dados utilizada:
+
+```javascript
+[
+  { id: 1, marca: 'Toyota',    modelo: 'Corolla' },
+  { id: 2, marca: 'Honda',     modelo: 'Civic' },
+  { id: 3, marca: 'Ford',      modelo: 'Mustang' },
+  { id: 4, marca: 'Chevrolet', modelo: 'Camaro' },
+  { id: 5, marca: 'Nissan',    modelo: 'Altima' }
+]
+```
+
+#### Funcionalidades:
+
+* Seleção da marca através de um menu suspenso.
+* Exibição automática do modelo correspondente.
+* Atualização dinâmica da interface conforme a escolha do usuário.
+
+#### Conceitos praticados:
+
+* Manipulação de eventos.
+* Uso de estados.
+* Renderização dinâmica de dados.
+
+---
+
+### 4️⃣ Alteração Dinâmica de Cores
+
+Este componente demonstra a manipulação de estados através da alteração dinâmica de estilos.
+
+#### Funcionalidades:
+
+* Botão para alteração da cor da tela.
+* Alternância entre quatro cores diferentes.
+* Atualização visual em tempo real.
+
+#### Conceitos praticados:
+
+* useState.
+* Eventos de clique.
+* Manipulação de estilos inline.
+
+---
+
+## 📂 Estrutura do Projeto
+
+```bash
+src/
+│
+├── components/
+│   ├── CadastroUsuarios/
+│   ├── BuscarUsuario/
+│   ├── ModeloCarros/
+│   └── AlterandoCor/
+│
+├── App.jsx
+└── main.jsx
+```
+
+---
+
+## ▶️ Como Executar o Projeto
+
+### Instalar as dependências
+
+```bash
+npm install
+```
+
+### Executar em ambiente de desenvolvimento
+
+```bash
+npm run dev
+```
+
+### Gerar build de produção
+
+```bash
+npm run build
+```
+
+---
+
+## 🎯 Objetivos de Aprendizagem
+
+Durante o desenvolvimento deste projeto foram praticados os seguintes conceitos:
+
+* Componentização em React.
+* Criação e manipulação de formulários.
+* Consumo de APIs com Axios.
+* Uso de Hooks (`useState` e `useEffect`).
+* Renderização condicional.
+* Manipulação de listas.
+* Eventos e interação com o usuário.
+* Organização de componentes.
+* Desenvolvimento com Vite.
+
+---
+
+## 👨‍💻 Autores
+
+- Kaique Abranches
+- Caíque Araújo
+- Douglas Costa
+- Gabriel Mendonça
